@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <!-- IDEA: viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- IDEA: css -->
+    <link rel="stylesheet" href="assets/css/assets.css">
+    <link rel="stylesheet" href="assets/css/mainpage.css">
+    <link rel="stylesheet" href="assets/css/planetsite.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/hash.js"></script>
+    <script src="assets/js/pageController.js"></script>
+
+    <meta charset="utf-8">
+    <title>PLANETS</title>
+  </head>
+  <body>
+
+
+    <section id="planetList">
+
+      <div class="maintitle">
+        <p>PLANETS</p>
+      </div>
+
+      <br>
+      <br>
+
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'mercury')">
+        <div class="textarea">
+          Mercury
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/mercury.png" alt="">
+        </div>
+      </div>
+      
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'venus')">
+        <div class="textarea">
+          Venus
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/venus.png" alt="">
+        </div>
+      </div>
+
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'earth')">
+        <div class="textarea">
+          Earth
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/earth.png" alt="">
+        </div>
+      </div>
+
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'mars')">
+        <div class="textarea">
+          Mars
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/mars.png" alt="">
+        </div>
+      </div>
+
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'jupiter')">
+        <div class="textarea">
+          Jupiter
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/jupiter.png" alt="">
+        </div>
+      </div>
+
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'saturn')">
+        <div class="textarea">
+          Saturn
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/saturn.png" alt="">
+        </div>
+      </div>
+
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'uranus')">
+        <div class="textarea">
+          Uranus
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/uranus.png" alt="">
+        </div>
+      </div>
+
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'neptune')">
+        <div class="textarea">
+          Neptune
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/neptune.png" alt="">
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="mercury">
+      <div class="planetview">
+        <p class="firsttitle">mercury</p>
+        <p class="secondtitle">smallest planet in our solar system</p>
+        <div class="planetimgarea">
+          <img src="assets/img/mercury.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">Radius:</span> 2.439,7 km </p>
+          <p><span class="planetgray">Distance from Sun:</span> 58 million km </p>
+          <p><span class="planetgray">Moons: </span>no moons </p>
+          <p><span class="planetgray">Gravity: </span>3,7 m/s² </p>
+          <p><span class="planetgray">Tilt of Axis: </span>2° </p>
+          <p><span class="planetgray">Lenghts of Year: </span>88 days </p>
+          <p><span class="planetgray">Lenght of Day: </span>58d 15 h 30 min </p>
+          <p><span class="planetgray">Temperature: </span>354 degrees F </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray">Last Planet: NONE </span> </p>
+          <p><span class="planetgray">Next Planet: Venus </span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">planet latest news</div>
+      <div class="newstext">Mar. 31 2022 - An international team of scientists has proved that Mercury, our solar system's smallest planet, has geomagnetic storms similar to those on Earth.</div>
+      <div class="newstext">July. 2 2021 - Why Does Mercury Have Such a Big Iron Core?</div>
+
+      <div class="comeback" onclick="setPage('planetList')">
+        ✘
+       </div>
+
+    </section>
+
+
+
+    <section id="venus">
+      <div class="planetview">
+        <p class="firsttitle">venus</p>
+        <p class="secondtitle">Earth’s closest planetary neighbor</p>
+        <div class="planetimgarea">
+          <img src="assets/img/venus.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">Radius:</span> 6.051,8 km </p>
+          <p><span class="planetgray">Distance from Sun:</span> 108 million km </p>
+          <p><span class="planetgray">Moons: </span>no moons </p>
+          <p><span class="planetgray">Gravity: </span>8,87 m/s² </p>
+          <p><span class="planetgray">Tilt of Axis: </span>177.3° </p>
+          <p><span class="planetgray">Lenghts of Year: </span>225 days </p>
+          <p><span class="planetgray">Lenght of Day: </span>23h 56m 4.1s </p>
+          <p><span class="planetgray">Temperature: </span>464 °C </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray">Last Planet: mercury </span> </p>
+          <p><span class="planetgray">Next Planet: earth </span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">planet latest news</div>
+      <div class="newstext">June. 14 2022 - No Signs (Yet) of Life on Venus</div>
+
+      <div class="comeback" onclick="setPage('planetList')">
+        ✘
+       </div>
+
+    </section>
+
+
+    <section id="earth">
+      <div class="planetview">
+        <p class="firsttitle">earth</p>
+        <p class="secondtitle">The Blue Planet</p>
+        <div class="planetimgarea">
+          <img src="assets/img/earth.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">Radius:</span> 6.371 km </p>
+          <p><span class="planetgray">Distance from Sun:</span> 150 million km </p>
+          <p><span class="planetgray">Moons: </span>our moon </p>
+          <p><span class="planetgray">Gravity: </span>9,807 m/s² </p>
+          <p><span class="planetgray">Tilt of Axis: </span>23.5° </p>
+          <p><span class="planetgray">Lenghts of Year: </span>365 days </p>
+          <p><span class="planetgray">Lenght of Day: </span>24 hours </p>
+          <p><span class="planetgray">Temperature: </span>57 degrees Fahrenheit </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray">Last Planet: venus </span> </p>
+          <p><span class="planetgray">Next Planet: mars</span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">planet latest news</div>
+      <div class="newstext">NASA's James Webb Space Telescope Detects Carbon Dioxide in Exoplanet Atmosphere.</div>
+      <div class="newstext">Scientists Discover Possible "Ocean World" 100-Light Years Away From Earth. ...</div>
+
+      <div class="comeback" onclick="setPage('planetList')">
+        ✘
+       </div>
+
+    </section>
+
+
+
+    <section id="mars">
+      <div class="planetview">
+        <p class="firsttitle">mars</p>
+        <p class="secondtitle">The Red Planet</p>
+        <div class="planetimgarea">
+          <img src="assets/img/mars.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">Radius:</span> 3.389,5 km </p>
+          <p><span class="planetgray">Distance from Sun:</span> 228 million km </p>
+          <p><span class="planetgray">Moons: </span>Phobos / Deimos </p>
+          <p><span class="planetgray">Gravity: </span>3,721 m/s² </p>
+          <p><span class="planetgray">Tilt of Axis: </span>25° </p>
+          <p><span class="planetgray">Lenghts of Year: </span>687 days </p>
+          <p><span class="planetgray">Lenght of Day: </span>1d 0h 37min </p>
+          <p><span class="planetgray">Temperature: </span>0 °C </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray">Last Planet: earth </span> </p>
+          <p><span class="planetgray">Next Planet: jupiter</span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">planet latest news</div>
+      <div class="newstext">NASA's Perseverance Makes New Discoveries in Mars' Jezero Crater</div>
+      <div class="newstext">10 Years Since Landing, NASA's Curiosity Mars Rover Still Has Drive</div>
+
+      <div class="comeback" onclick="setPage('planetList')">
+        ✘
+       </div>
+
+    </section>
+
+
+
+
+    <section id="jupiter">
+      <div class="planetview">
+        <p class="firsttitle">jupiter</p>
+        <p class="secondtitle">Jupiter has a long history of surprising scientists</p>
+        <div class="planetimgarea">
+          <img src="assets/img/jupiter.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">Radius:</span> 69.911 km </p>
+          <p><span class="planetgray">Distance from Sun:</span> 778 million km </p>
+          <p><span class="planetgray">Moons: </span>80 moons</p>
+          <p><span class="planetgray">Gravity: </span>24,79 m/s² </p>
+          <p><span class="planetgray">Tilt of Axis: </span>3° </p>
+          <p><span class="planetgray">Lenghts of Year: </span>12 Years</p>
+          <p><span class="planetgray">Lenght of Day: </span>0d 9h 56min </p>
+          <p><span class="planetgray">Temperature: </span> </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray">Last Planet: mars </span> </p>
+          <p><span class="planetgray">Next Planet: uranus</span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">planet latest news</div>
+      <div class="newstext">Sstronomer captures impressive picture of Jupiter from back garden</div>
+
+      <div class="comeback" onclick="setPage('planetList')">
+        ✘
+       </div>
+
+    </section>
+
+
+
+    <section id="saturn">
+      <div class="planetview">
+        <p class="firsttitle">saturn</p>
+        <p class="secondtitle">the second-largest planet in our solar system.</p>
+        <div class="planetimgarea">
+          <img src="assets/img/saturn.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">Radius:</span> 58.232 km</p>
+          <p><span class="planetgray">Distance from Sun:</span> 1.4 billion km </p>
+          <p><span class="planetgray">Moons: </span>7 moons</p>
+          <p><span class="planetgray">Gravity: </span>10,44 m/s² </p>
+          <p><span class="planetgray">Tilt of Axis: </span>27° </p>
+          <p><span class="planetgray">Lenghts of Year: </span>29 Jahre</p>
+          <p><span class="planetgray">Lenght of Day: </span>0d 10 h 34 min </p>
+          <p><span class="planetgray">Temperature: </span>-140°C </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray">Last Planet: jupiter </span> </p>
+          <p><span class="planetgray">Next Planet: uranus</span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">planet latest news</div>
+      <div class="newstext"> Move over Jupiter; Saturn is the new moon king. A team has found 20 new moons orbiting Saturn. This brings the ringed planet's total number of ...</div>
+
+      <div class="comeback" onclick="setPage('planetList')">
+        ✘
+       </div>
+
+    </section>
+
+
+
+
+    <section id="uranus">
+      <div class="planetview">
+        <p class="firsttitle">uranus</p>
+        <p class="secondtitle">Uranus is the seventh planet from the Sun</p>
+        <div class="planetimgarea">
+          <img src="assets/img/uranus.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">Radius:</span> 25.362 km</p>
+          <p><span class="planetgray">Distance from Sun:</span> 2.8 billion km </p>
+          <p><span class="planetgray">Moons: </span>27 moons</p>
+          <p><span class="planetgray">Gravity: </span>8,87 m/s² </p>
+          <p><span class="planetgray">Tilt of Axis: </span>97.77° </p>
+          <p><span class="planetgray">Lenghts of Year: </span>84.0205 Earth years</p>
+          <p><span class="planetgray">Lenght of Day: </span>0d 17 h 14 min </p>
+          <p><span class="planetgray">Temperature: </span>-195°C </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray">Last Planet: saturn </span> </p>
+          <p><span class="planetgray">Next Planet: neptune</span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">planet latest news</div>
+      <div class="newstext">See images of the bright blue ring</div>
+
+      <div class="comeback" onclick="setPage('planetList')">
+        ✘
+       </div>
+
+    </section>
+
+
+
+
+    <section id="neptune">
+      <div class="planetview">
+        <p class="firsttitle">neptune</p>
+        <p class="secondtitle">Dark, cold, and whipped by supersonic winds</p>
+        <div class="planetimgarea">
+          <img src="assets/img/neptune.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">Radius:</span> 24.622 km</p>
+          <p><span class="planetgray">Distance from Sun:</span> 4.5 billion km </p>
+          <p><span class="planetgray">Moons: </span>7 moons</p>
+          <p><span class="planetgray">Gravity: </span>11,15 m/s² </p>
+          <p><span class="planetgray">Tilt of Axis: </span>28.32° </p>
+          <p><span class="planetgray">Lenghts of Year: </span>165 Earth years</p>
+          <p><span class="planetgray">Lenght of Day: </span>0d 16 h 6 min </p>
+          <p><span class="planetgray">Temperature: </span>-214°C </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray">Last Planet: uranus </span> </p>
+          <p><span class="planetgray">Next Planet: NONE</span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">planet latest news</div>
+      <div class="newstext">May. 31 2022 - Astronomers may now understand why the similar planets Uranus and Neptune are different colors</div>
+
+      <div class="comeback" onclick="setPage('planetList')">
+        ✘
+       </div>
+
+    </section>
+
+
+    <div class="footer">
+      Made by Blocki2006 and The_chris_craft
+    </div>
+
+    
+
+  </body>
+</html>

@@ -1,0 +1,81 @@
+.maintitle {
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  color: gray;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.maintitle p{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+.planetdiv {
+  margin-left: auto;
+  margin-right: auto;
+  width: 65vw;
+  border-radius: 50px 50px 50px 50px;
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.textarea {
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  color: orange;
+  font-size: 22px;
+  margin-left: 6px;
+  transition: all 1s;
+  text-transform: uppercase;
+}
+
+.planetdiv:hover, .planetdiv.clicked {
+  width: 80vw;
+  transition: all 1s;
+  border: 1px solid orange;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+}
+
+.textarea:hover {
+  font-size: 32px;
+  transition: all 1s;
+  margin-left: 12px;
+}
+.imgarea {
+  height: 70px;
+}
+
+.imgarea img{
+  height: 0px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.planetdiv:hover .imgarea img, .planetdiv.clicked .imgarea img {
+  opacity: 1;
+  transition: all 1s;
+  position: relative;
+  height: 140px;
+  transform: translateY(-30px) translateX(20px);
+}
+
+
+@media only screen and (min-width: 600px) {
+  .planetdiv {
+    width: 30vw;
+  }
+  .planetdiv:hover, .planetdiv.clicked {
+    width: 50vw;
+  }
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&display=swap');
+/*font-family: 'Alumni Sans Pinstripe', sans-serif;*/
+
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: none;
+  background-color: Black;
+  position: absolute;
+  width: 100%;
+  min-height: 80vh;
+  top: 0px;
+  height: fit-content;
+  padding-bottom: 20vh;
+}
+
+.footer {
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  color: gray;
+  font-size: 20px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 12px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+
+
+
+
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 2.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: orange;
+  transition: all 1s ease;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: yellow;
+  transition: all 1s ease;
+}
