@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/assets.css">
     <link rel="stylesheet" href="assets/css/mainpage.css">
     <link rel="stylesheet" href="assets/css/planetsite.css">
+    <link rel="stylesheet" href="assets/css/mainuniversepage.css">
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="assets/js/hash.js"></script>
@@ -19,11 +20,62 @@
   </head>
   <body>
 
+    <section id="mainpage">
+      <div class="maintitle">
+        <p>THE UNIVERSE</p>
+      </div>
+
+      <div class="infoboxmainpage">
+        <div class="unitext" style="text-align: right">
+          <p>The universe</p>
+          <p>The universe is all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy. The Big Bang theory is the prevailing cosmological description of the development of the universe. According to this theory, space and time emerged together 13.787±0.020 billion years ago, and the universe has been expanding ever since the Big Bang. While the spatial size of the entire universe is unknown, it is possible to measure the size of the observable universe, which is approximately 93 billion light-years in diameter at the present day.</p>
+        </div>
+        <div class="imgmainpages">
+          <img src="assets/img/universe.png" alt="">
+        </div>
+
+      </div>
+
+
+      <div class="infoboxmainpage">
+        <div class="imgmainpages">
+          <img src="assets/img/blackhole.png" alt="">
+        </div>
+        <div class="unitext">
+          <p>Black hole</p>
+          <p>A black hole is a region of spacetime where gravity is so strong that nothing – no particles or even electromagnetic radiation such as light – can escape from it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. The boundary of no escape is called the event horizon. Although it has a great effect on the fate and circumstances of an object crossing it, it has no locally detectable features according to general relativity. In many ways, a black hole acts like an ideal black body, as it reflects no light. Moreover, quantum field theory in curved spacetime predicts that event horizons emit Hawking radiation, with the same spectrum as a black body of a temperature inversely proportional to its mass. This temperature is of the order of billionths of a kelvin for stellar black holes, making it essentially impossible to observe directly.</p>
+        </div>
+      </div>
+
+      <div class="sectitle">
+        <p>lern more about:</p>
+      </div>
+        <div class="themen">
+          <div class="inthemen" onclick="clickOnPlanet(this, 'planetList')" >
+            our planetary system
+          </div>
+          <div class="inthemen" onclick="clickOnPlanet(this, 'thebigstars')">
+            the big stars
+          </div>
+          <div class="inthemen" onclick="clickOnPlanet(this, '')">
+            black hole
+          </div>
+          <div class="inthemen" onclick="clickOnPlanet(this, '')">
+            satelit
+          </div>
+        </div>
+
+        <div class="footer">
+        </div>
+
+    </section>
+
+
 
     <section id="planetList">
 
       <div class="maintitle">
-        <p>PLANETS</p>
+        <p>OUR PLANETARY SYSTEM</p>
       </div>
 
       <br>
@@ -37,7 +89,7 @@
           <img src="assets/img/mercury.png" alt="">
         </div>
       </div>
-      
+
       <div class="planetdiv" onclick="clickOnPlanet(this, 'venus')">
         <div class="textarea">
           Venus
@@ -101,6 +153,11 @@
         </div>
       </div>
 
+
+      <div class="comeback" onclick="setPage('mainpage')" style="color: orange">
+        ✘
+       </div>
+
     </section>
 
 
@@ -133,18 +190,14 @@
         </div>
       </div>
 
-      <div class="news">planet latest news</div>
-      <div class="newstext">Mar. 31 2022 - An international team of scientists has proved that Mercury, our solar system's smallest planet, has geomagnetic storms similar to those on Earth.</div>
-      <div class="newstext">July. 2 2021 - Why Does Mercury Have Such a Big Iron Core?</div>
+      <div class="news">planet info text</div>
+      <div class="newstext">The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon. From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter.</div>
 
       <div class="comeback" onclick="setPage('planetList')">
         ✘
        </div>
 
     </section>
-
-
-
     <section id="venus">
       <div class="planetview">
         <p class="firsttitle">venus</p>
@@ -174,16 +227,14 @@
         </div>
       </div>
 
-      <div class="news">planet latest news</div>
-      <div class="newstext">June. 14 2022 - No Signs (Yet) of Life on Venus</div>
+      <div class="news">planet info text</div>
+      <div class="newstext">It's a cloud-swaddled planet named for a love goddess, often called Earth’s twin. But pull up a bit closer, and Venus turns hellish. Our nearest planetary neighbor, the second planet from the Sun, has a surface hot enough to melt lead. The atmosphere is so thick that, from the surface, the Sun is just a smear of light.</div>
 
       <div class="comeback" onclick="setPage('planetList')">
         ✘
        </div>
 
     </section>
-
-
     <section id="earth">
       <div class="planetview">
         <p class="firsttitle">earth</p>
@@ -213,18 +264,14 @@
         </div>
       </div>
 
-      <div class="news">planet latest news</div>
-      <div class="newstext">NASA's James Webb Space Telescope Detects Carbon Dioxide in Exoplanet Atmosphere.</div>
-      <div class="newstext">Scientists Discover Possible "Ocean World" 100-Light Years Away From Earth. ...</div>
+      <div class="news">planet info text</div>
+      <div class="newstext">Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things. While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.</div>
 
       <div class="comeback" onclick="setPage('planetList')">
         ✘
        </div>
 
     </section>
-
-
-
     <section id="mars">
       <div class="planetview">
         <p class="firsttitle">mars</p>
@@ -238,7 +285,7 @@
         <div class="Infos">
           <p><span class="planetgray">Radius:</span> 3.389,5 km </p>
           <p><span class="planetgray">Distance from Sun:</span> 228 million km </p>
-          <p><span class="planetgray">Moons: </span>Phobos / Deimos </p>
+          <p><span class="planetgray">Moons: </span>2 Moons</p>
           <p><span class="planetgray">Gravity: </span>3,721 m/s² </p>
           <p><span class="planetgray">Tilt of Axis: </span>25° </p>
           <p><span class="planetgray">Lenghts of Year: </span>687 days </p>
@@ -254,19 +301,14 @@
         </div>
       </div>
 
-      <div class="news">planet latest news</div>
-      <div class="newstext">NASA's Perseverance Makes New Discoveries in Mars' Jezero Crater</div>
-      <div class="newstext">10 Years Since Landing, NASA's Curiosity Mars Rover Still Has Drive</div>
+      <div class="news">planet info text</div>
+      <div class="newstext">Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was—billions of years ago—wetter and warmer, with a thicker atmosphere.</div>
 
       <div class="comeback" onclick="setPage('planetList')">
         ✘
        </div>
 
     </section>
-
-
-
-
     <section id="jupiter">
       <div class="planetview">
         <p class="firsttitle">jupiter</p>
@@ -280,7 +322,7 @@
         <div class="Infos">
           <p><span class="planetgray">Radius:</span> 69.911 km </p>
           <p><span class="planetgray">Distance from Sun:</span> 778 million km </p>
-          <p><span class="planetgray">Moons: </span>80 moons</p>
+          <p><span class="planetgray">Moons: </span>79 moons</p>
           <p><span class="planetgray">Gravity: </span>24,79 m/s² </p>
           <p><span class="planetgray">Tilt of Axis: </span>3° </p>
           <p><span class="planetgray">Lenghts of Year: </span>12 Years</p>
@@ -296,17 +338,14 @@
         </div>
       </div>
 
-      <div class="news">planet latest news</div>
-      <div class="newstext">Sstronomer captures impressive picture of Jupiter from back garden</div>
+      <div class="news">planet info text</div>
+      <div class="newstext">Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red spot is a centuries-old storm bigger than Earth.</div>
 
       <div class="comeback" onclick="setPage('planetList')">
         ✘
        </div>
 
     </section>
-
-
-
     <section id="saturn">
       <div class="planetview">
         <p class="firsttitle">saturn</p>
@@ -320,7 +359,7 @@
         <div class="Infos">
           <p><span class="planetgray">Radius:</span> 58.232 km</p>
           <p><span class="planetgray">Distance from Sun:</span> 1.4 billion km </p>
-          <p><span class="planetgray">Moons: </span>7 moons</p>
+          <p><span class="planetgray">Moons: </span>62 moons</p>
           <p><span class="planetgray">Gravity: </span>10,44 m/s² </p>
           <p><span class="planetgray">Tilt of Axis: </span>27° </p>
           <p><span class="planetgray">Lenghts of Year: </span>29 Jahre</p>
@@ -336,18 +375,14 @@
         </div>
       </div>
 
-      <div class="news">planet latest news</div>
-      <div class="newstext"> Move over Jupiter; Saturn is the new moon king. A team has found 20 new moons orbiting Saturn. This brings the ringed planet's total number of ...</div>
+      <div class="news">planet info text</div>
+      <div class="newstext">Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's.</div>
 
       <div class="comeback" onclick="setPage('planetList')">
         ✘
        </div>
 
     </section>
-
-
-
-
     <section id="uranus">
       <div class="planetview">
         <p class="firsttitle">uranus</p>
@@ -377,18 +412,14 @@
         </div>
       </div>
 
-      <div class="news">planet latest news</div>
-      <div class="newstext">See images of the bright blue ring</div>
+      <div class="news">planet info text</div>
+      <div class="newstext">Uranus—seventh planet from the Sun—rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side.</div>
 
       <div class="comeback" onclick="setPage('planetList')">
         ✘
        </div>
 
     </section>
-
-
-
-
     <section id="neptune">
       <div class="planetview">
         <p class="firsttitle">neptune</p>
@@ -402,7 +433,7 @@
         <div class="Infos">
           <p><span class="planetgray">Radius:</span> 24.622 km</p>
           <p><span class="planetgray">Distance from Sun:</span> 4.5 billion km </p>
-          <p><span class="planetgray">Moons: </span>7 moons</p>
+          <p><span class="planetgray">Moons: </span>14 moons</p>
           <p><span class="planetgray">Gravity: </span>11,15 m/s² </p>
           <p><span class="planetgray">Tilt of Axis: </span>28.32° </p>
           <p><span class="planetgray">Lenghts of Year: </span>165 Earth years</p>
@@ -418,8 +449,8 @@
         </div>
       </div>
 
-      <div class="news">planet latest news</div>
-      <div class="newstext">May. 31 2022 - Astronomers may now understand why the similar planets Uranus and Neptune are different colors</div>
+      <div class="news">planet info text</div>
+      <div class="newstext">Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations, rather than by telescope.</div>
 
       <div class="comeback" onclick="setPage('planetList')">
         ✘
@@ -427,12 +458,311 @@
 
     </section>
 
-    <!--
-    <div class="footer">
-      Made by Blocki2006 and The_chris_craft
-    </div>
-    -->
-    
+
+
+    <section id="thebigstars">
+      <div class="maintitle">
+        <p>THE BIG STARS</p>
+      </div>
+      <br>
+      <br>
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'browndwarf')">
+        <div class="textarea">
+          brown dwarf
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/browndwarf.png" alt="">
+        </div>
+      </div>
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'reddwarf')">
+        <div class="textarea">
+          red dwarf
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/reddwarf.png" alt="">
+        </div>
+      </div>
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'whitedwarf')">
+        <div class="textarea">
+          white dwarf
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/whitedwarf.png" alt="">
+        </div>
+      </div>
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'RedGiant')">
+        <div class="textarea">
+          Red Giant
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/RedGiant.png" alt="">
+        </div>
+      </div>
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'blueHyperGiant')">
+        <div class="textarea">
+          Blue Hyper Giant
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/BlueHyperGiant.png" alt="">
+        </div>
+      </div>
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'yellowHyperGiant')">
+        <div class="textarea">
+          yellow Hyper Giant
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/yellowHyperGiant.png" alt="">
+
+
+
+        </div>
+      </div>
+      <div class="planetdiv" onclick="clickOnPlanet(this, 'redHyperGiant')">
+        <div class="textarea">
+          red Hyper Giant
+        </div>
+        <div class="imgarea">
+          <img src="assets/img/redHyperGiant.png" alt="">
+        </div>
+      </div>
+      <div class="comeback" onclick="setPage('mainpage')" style="color: orange">
+        ✘
+       </div>
+    </section>
+
+
+    <section id="browndwarf">
+      <div class="planetview">
+        <p class="firsttitle">brown dwarf</p>
+        <p class="secondtitle">occupy a special position between stars and planets</p>
+        <div class="planetimgarea">
+          <img src="assets/img/browndwarf.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">mass:</span>  13–80 times the mass of Jupiter </p>
+          <p><span class="planetgray">Lenghts of live: </span>undefined </p>
+          <p><span class="planetgray">star: </span> yes / no </p>
+          <p><span class="planetgray">Temperature: </span> below about 3 million degrees </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray"> </span> </p>
+          <p><span class="planetgray"> </span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">star info text</div>
+      <div class="newstext">Brown dwarfs are celestial bodies that occupy a special position between stars and planets. Their masses are less than 75 times the mass of Jupiter and are therefore insufficient to trigger internal hydrogen fusion as in the lightest stars, the red dwarfs.</div>
+
+      <div class="comeback" onclick="setPage('thebigstars')">
+        ✘
+       </div>
+
+    </section>
+    <section id="reddwarf">
+      <div class="planetview">
+        <p class="firsttitle">red dwarf</p>
+        <p class="secondtitle">Red dwarfs are the smallest stars</p>
+        <div class="planetimgarea">
+          <img src="assets/img/reddwarf.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">mass:</span> 0,08 to 0,6 times the mass of sun</p>
+          <p><span class="planetgray">Lenghts of live: </span>really long </p>
+          <p><span class="planetgray">star: </span> yes </p>
+          <p><span class="planetgray">Temperature: </span> between 2200 and 3800 Kelvin </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray"> </span> </p>
+          <p><span class="planetgray"> </span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">star info text</div>
+      <div class="newstext">Red dwarfs are the smallest stars with hydrogen burning taking place at their centers. About three quarters of all stars belong to this stellar class. They shine so faintly that not a single one can be seen from Earth with the naked eye</div>
+
+      <div class="comeback" onclick="setPage('thebigstars')">
+        ✘
+       </div>
+
+    </section>
+    <section id="whitedwarf">
+      <div class="planetview">
+        <p class="firsttitle">White dwarf</p>
+        <p class="secondtitle">A white dwarf is a small, very compact old star.</p>
+        <div class="planetimgarea">
+          <img src="assets/img/whitedwarf.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">mass:</span> 1.44 times the mass of sun</p>
+          <p><span class="planetgray">Lenghts of live: </span>really long </p>
+          <p><span class="planetgray">star: </span> yes </p>
+          <p><span class="planetgray">Temperature: </span> between 10.000 und 100.000 Kelvin </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray"> </span> </p>
+          <p><span class="planetgray"> </span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">star info text</div>
+      <div class="newstext">A white dwarf is a small, very compact old star. Despite its high surface temperature, it only has a very low luminosity, so it lies far below the main sequence in the Hertzsprung-Russell diagram.</div>
+
+      <div class="comeback" onclick="setPage('thebigstars')">
+        ✘
+       </div>
+
+    </section>
+    <section id="RedGiant">
+      <div class="planetview">
+        <p class="firsttitle">Red Giant</p>
+        <p class="secondtitle">A red giant is a star</p>
+        <div class="planetimgarea">
+          <img src="assets/img/RedGiant.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">mass:</span> 0.8 to 8 times the mass of sun</p>
+          <p><span class="planetgray">Lenghts of live: </span>really long </p>
+          <p><span class="planetgray">star: </span> yes </p>
+          <p><span class="planetgray">Temperature: </span> 2,200 to 3,200 degrees Celsius </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray"> </span> </p>
+          <p><span class="planetgray"> </span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">star info text</div>
+      <div class="newstext">A red giant is a star of large dimensions and therefore a celestial body of high luminosity compared to a main sequence star with the same surface temperature. Examples of this are some first-magnitude stars that already appear red with the naked eye</div>
+
+      <div class="comeback" onclick="setPage('thebigstars')">
+        ✘
+       </div>
+
+    </section>
+    <section id="blueHyperGiant">
+      <div class="planetview">
+        <p class="firsttitle">blue HyperGiant</p>
+        <p class="secondtitle">A blue supergiant is a hot, luminous star</p>
+        <div class="planetimgarea">
+          <img src="assets/img/blueHyperGiant.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">mass:</span> undefined </p>
+          <p><span class="planetgray">Lenghts of live: </span>really long </p>
+          <p><span class="planetgray">star: </span> yes </p>
+          <p><span class="planetgray">Temperature: </span> undefined </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray"> </span> </p>
+          <p><span class="planetgray"> </span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">star info text</div>
+      <div class="newstext">a HyperGiant is a very rare type of star that has an extremely high luminosity, mass, size and mass loss because of its extreme stellar winds.</div>
+
+      <div class="comeback" onclick="setPage('thebigstars')">
+        ✘
+       </div>
+
+    </section>
+    <section id="yellowHyperGiant">
+      <div class="planetview">
+        <p class="firsttitle">yellow HyperGiant</p>
+        <p class="secondtitle">A yellow supergiant is a hot, luminous star</p>
+        <div class="planetimgarea">
+          <img src="assets/img/yellowHyperGiant.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">mass:</span> undefined </p>
+          <p><span class="planetgray">Lenghts of live: </span>really long </p>
+          <p><span class="planetgray">star: </span> yes </p>
+          <p><span class="planetgray">Temperature: </span> undefined </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray"> </span> </p>
+          <p><span class="planetgray"> </span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">star info text</div>
+      <div class="newstext">a HyperGiant is a very rare type of star that has an extremely high luminosity, mass, size and mass loss because of its extreme stellar winds.</div>
+
+      <div class="comeback" onclick="setPage('thebigstars')">
+        ✘
+       </div>
+
+    </section>
+    <section id="redHyperGiant">
+      <div class="planetview">
+        <p class="firsttitle">red HyperGiant</p>
+        <p class="secondtitle">A red supergiant is a hot, luminous star</p>
+        <div class="planetimgarea">
+          <img src="assets/img/redHyperGiant.png" alt="">
+        </div>
+      </div>
+
+      <div class="planatinfos">
+        <div class="Infos">
+          <p><span class="planetgray">mass:</span> undefined </p>
+          <p><span class="planetgray">Lenghts of live: </span>really long </p>
+          <p><span class="planetgray">star: </span> yes </p>
+          <p><span class="planetgray">Temperature: </span> undefined </p>
+        </div>
+        <br>
+        <br>
+        <div class="NextPlanetes">
+          <p><span class="planetgray"> </span> </p>
+          <p><span class="planetgray"> </span> </p>
+
+        </div>
+      </div>
+
+      <div class="news">star info text</div>
+      <div class="newstext">a HyperGiant is a very rare type of star that has an extremely high luminosity, mass, size and mass loss because of its extreme stellar winds.</div>
+
+      <div class="comeback" onclick="setPage('thebigstars')">
+        ✘
+       </div>
+
+    </section>
+
 
   </body>
 </html>
