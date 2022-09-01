@@ -1,0 +1,70 @@
+canvas {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+body { margin: 0; }
+
+
+#info {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: all 300ms;
+    transition-timing-function: cubic-bezier(0.88, 0.12, 0.25, 1);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    background-color: rgba(10, 10, 10, 0.6);
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 30%;
+    max-height: 50%;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 45px;
+    color: #FF6400;
+}
+
+#info #planet {
+    position: absolute;
+    transform: translateY(-75px) translateX(-50%);
+    left: 50%;
+}
+
+#info h2 {
+    margin-bottom: 0px;
+}
+
+#info h6 {
+    margin: 15px;
+    margin-top: 3px;
+}
+
+#info .infos {
+    text-align: left;
+}
+
+#info .infos p {
+    margin: 1px;
+}
+
+#info .gray {
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.comeback{
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 25px;
+    border-radius: 50%;
+    position: fixed;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}

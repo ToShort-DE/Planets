@@ -3,7 +3,7 @@ $(window).on('load', function() {
 })
 
 function getPage() {
-    return HashParameters.getParameter('page', 'planetList');
+    return HashParameters.getParameter('page', 'mainpage');
 }
 
 function updatePage() {
@@ -44,10 +44,10 @@ function clickOnPlanet(element, page) {
         }
         if(!$(element)[0].classList.contains("clicked")) {
             $(element)[0].classList.add("clicked")
-            if(lastHover != null) 
+            if(lastHover != null)
                 $(lastHover)[0].classList.remove("clicked")
             lastHover = element;
         }
-    } else 
+    } else
         setPage(page)
 }
