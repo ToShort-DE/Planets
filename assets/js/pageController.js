@@ -3,7 +3,8 @@ $(window).on('load', function() {
 })
 
 function getPage() {
-    return HashParameters.getParameter('page', 'mainpage');
+    //return HashParameters.getParameter('page', 'mainpage');
+    return HashParameters.getParameter('page', 'planetList');
 }
 
 function updatePage() {
